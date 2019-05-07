@@ -1,0 +1,15 @@
+[Wed Sep 13 2017 01:15:14 GMT+0900 (KST)] Uncaught SyntaxError: Unexpected identifier| Script: file:///home/pi/smart-mirror/smart-mirror/plugins/email/service.js Line: 54
+[Wed Sep 13 2017 01:27:03 GMT+0900 (KST)] Uncaught SyntaxError: Unexpected identifier| Script: file:///home/pi/smart-mirror/smart-mirror/plugins/email/service.js Line: 80
+[Sun Sep 17 2017 23:21:18 GMT+0900 (KST)] Uncaught ReferenceError: d3 is not defined| Script: file:///home/pi/smart-mirror/smart-mirror/plugins/face_detection/controller.js Line: 95
+[Sun Sep 17 2017 23:33:41 GMT+0900 (KST)] Uncaught ReferenceError: nv is not defined| Script: file:///home/pi/smart-mirror/smart-mirror/plugins/face_detection/controller.js Line: 69
+[Sun Sep 17 2017 23:34:47 GMT+0900 (KST)] Uncaught ReferenceError: d3 is not defined| Script: https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.7.0/nv.d3.min.js Line: 2
+[Sun Sep 17 2017 23:35:46 GMT+0900 (KST)] Uncaught ReferenceError: pieSlice is not defined| Script: file:///home/pi/smart-mirror/smart-mirror/plugins/face_detection/controller.js Line: 123
+[Sun Sep 17 2017 23:38:49 GMT+0900 (KST)] Uncaught ReferenceError: pieSlice is not defined| Script: file:///home/pi/smart-mirror/smart-mirror/plugins/face_detection/controller.js Line: 123
+[Mon Sep 18 2017 22:59:46 GMT+0900 (KST)] Uncaught ReferenceError: pieSlice is not defined| Script: file:///home/pi/smart-mirror/smart-mirror/plugins/face_detection/controller.js Line: 58
+[Mon Sep 18 2017 22:59:57 GMT+0900 (KST)] Uncaught TypeError: Cannot read property 'offsetWidth' of null| Script: file:///home/pi/smart-mirror/smart-mirror/plugins/face_detection/controller.js Line: 160
+[Sat Sep 23 2017 02:08:24 GMT+0900 (KST)] Uncaught ReferenceError: pieSlice is not defined| Script: file:///home/pi/smart-mirror/smart-mirror/plugins/face_detection/controller.js Line: 58
+[Sat Sep 23 2017 02:10:28 GMT+0900 (KST)] Uncaught ReferenceError: pieSlice is not defined| Script: file:///home/pi/smart-mirror/smart-mirror/plugins/face_detection/controller.js Line: 58
+[Sat Sep 23 2017 02:11:11 GMT+0900 (KST)] Uncaught ReferenceError: pieSlice is not defined| Script: file:///home/pi/smart-mirror/smart-mirror/plugins/face_detection/controller.js Line: 58
+[Sat Sep 23 2017 02:11:56 GMT+0900 (KST)] Uncaught ReferenceError: pieSlice is not defined| Script: file:///home/pi/smart-mirror/smart-mirror/plugins/face_detection/controller.js Line: 58
+[Sat Sep 23 2017 02:23:18 GMT+0900 (KST)] Uncaught SyntaxError: Unexpected end of input| Script: file:///home/pi/smart-mirror/smart-mirror/plugins/face_detection/controller.js Line: 414
+[Sun Sep 24 2017 00:30:50 GMT+0900 (KST)] Uncaught Error: read ETIMEDOUT| Script: events.js Line: 163

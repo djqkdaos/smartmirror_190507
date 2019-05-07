@@ -1,0 +1,144 @@
+{
+  "general": {
+    "language": "ko",
+    "layout": "main",
+    "commandsPerPage": 10
+  },
+  "speech": {
+    "device": "default",
+    "keyFilename": "./keyfile.json",
+    "hotwords": [
+      {
+        "keyword": "거울아",
+        "model": "smart_mirror.pmdl"
+      }
+    ],
+    "sensitivity": 1
+  },
+  "remote": {
+    "enabled": true,
+    "port": 8080
+  },
+  "lastfm": {
+    "refreshInterval": 0.6
+  },
+  "fitbit": {
+    "timeout": 10000,
+    "uris": {
+      "authorizationUri": "https://www.fitbit.com",
+      "authorizationPath": "/oauth2/authorize",
+      "tokenUri": "https://api.fitbit.com",
+      "tokenPath": "/oauth2/token"
+    },
+    "authorization_uri": {
+      "redirect_uri": "http://localhost:4000/fitbit_auth_callback/",
+      "response_type": "code",
+      "scope": "activity nutrition profile settings sleep social weight heartrate",
+      "state": "3(#0/!~"
+    }
+  },
+  "geoPosition": {
+    "latitude": "35.164631",
+    "longitude": "129.071321"
+  },
+  "greeting": {
+    "option": "allDay"
+  },
+  "light": {
+    "settings": {
+      "hueIp": "192.168.0.3",
+      "hueUsername": "wRFdbK1r0bfbYV2nt0mzUvZqIg90uSd2ncnkbMcn"
+    },
+    "setup": [
+      {
+        "name": "거실",
+        "targets": [
+          {
+            "lightType": "hue",
+            "id": 0,
+            "ip": "192.168.0.3",
+            "port": "80"
+          },
+          {
+            "lightType": "hyperion"
+          }
+        ]
+      }
+    ]
+  },
+  "autoTimer": {
+    "mode": "disabled",
+    "autoWake": "07:00:00",
+    "autoSleep": 40,
+    "wakeCmd": "sudo ./scripts/raspi-monitor.sh on > /dev/null 2>&1",
+    "sleepCmd": "sudo ./scripts/raspi-monitor.sh off > /dev/null 2>&1"
+  },
+  "rss": {
+    "refreshInterval": 120
+  },
+  "giphy": {
+    "key": "dc6zaTOxFJmzC"
+  },
+  "youtube": {
+    "key": "AIzaSyC7fXd8dHhCWxNxYxcCJX9f6mUUA57Qx-Y"
+  },
+  "calendar": {
+    "icals": [
+      "https://calendar.google.com/calendar/ical/yoona7394%40gmail.com/private-dd39043e3386c9761f589853dcd64e36/basic.ics\r\n"
+    ],
+    "maxResults": 9,
+    "maxDays": 9,
+    "showCalendarNames": true
+  },
+  "traffic": {
+    "key": "AtLxJryWfHdThBKMumQa2-OBrfoKvLNRWtEchb6nMOqfQ5ifGIIuweSJHXYdT5z_",
+    "refreshInterval": "5"
+  },
+  "forecast": {
+    "key": "9b2d063cd93d1d60d61b989808919d71",
+    "units": "auto",
+    "refreshInterval": 2
+  },
+  "faceDetection": {
+    "emotion": 
+      {
+        "anger": 0,
+        "contempt": 0,
+        "disgust": 0,
+        "fear": 0,
+        "happiness": 0,
+        "neutral": 0,
+        "sadness": 0,
+        "surprise": 0
+      }
+    ,
+    "faceIds": [
+      ""
+    ],
+    "personId": {
+      "2b6a5be2-9036-4927-b88d-dde51edbc0b7": "감동근",
+      "483cb6be-dca9-4f7a-9e3d-9093c870e970": "최민준",
+      "bda63cd9-5920-44f2-8b52-261a7f1410b2": "김남억"
+    }
+  },
+  "userData": {
+    "최민준": {
+        "calendar": {
+	    "icals": [
+	      "https://calendar.google.com/calendar/ical/yoona7394%40gmail.com/private-dd39043e3386c9761f589853dcd64e36/basic.ics\r\n"
+	    ],
+	    "maxResults": 9,
+	    "maxDays": 9,
+	    "showCalendarNames": true
+	},
+	"email":{
+		"id":"yoona7394@gmail.com",
+		"password":"atkhnxipvhhfltmf"
+	}
+    }
+    
+  },
+  "hueState": {
+	
+  }
+}

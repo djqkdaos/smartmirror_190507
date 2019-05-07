@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "mindful-ship-176106",
+  "private_key_id": "844b12127e3a3334de044ea079a77664c6e1070e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCzO5DlgBhMZY7f\n5fUOtdzLEQJpwjLAszMSgVas4b1C7UGwNKwnsQrHU9LifuLZXdQIpC9SeV4nFqoj\nKqomzTfuAsTmgQRAoHaucJPpAxwAJCbgWqmImKcm6gX4N5+t1gYA6/xyTLjp7RKu\nZXe63mJ/67jj0cnTiLw+Sttuy7Qq7VEt2/Qh5NSEkLk2dxxDtcnp7KxxG9Ivyb/b\nmYsN4iKHXo/1Mj8ZdoIHZLH/WSstwdZSKHB6r2imON5/eNuL98zJbKhdweefucYl\naCyww/QcGO9t5wMFTvOt8Wl6H4FrlKfeoq+IIS+5iWk99OeiPlSR0INSeIdY/Ykg\nI+4BIRjfAgMBAAECggEAR6KDj46KZ6Jhn9BHiRkbxZenSMDCyyz0OS2ziEZy//hW\nvEfZFMYYYkF49Gi1Xx42vDtu5H44qNPQrVyEhByagYjezKf9HJ1lweOh4kwJWW8Z\nkKr7vmoQyKdZOnN04SQ84wpuq/pJH8nOoSBR4cC3SpxamceD7IVmg1kk6dwFxu/F\ndVUV4nauK1k9+GgFy58D1TEQ6qwflCHd8TF4EzFJY6vMIjFaa3owTo4SL4hGIQzN\n6vT84vre2Spx4RzPAZad8RIfTybLykNrWARuTeXbuXFITmR0gFvTGnjrlMVo3vVg\nq4QfqNeNcg5Uk9EdgFeih4r04193fXTDjxuTG7QWDQKBgQDx/Sekw8vwYW+Ga3gM\nt4ODNyrG4MKDaAewSFPpuoFDYjOAqgVyzK5awonovZficzRvAcnopBm7bN/swvdS\nKOFEw8nIMOMwsRACnzCm5idKuCvhLaAL9Aa4KWGA97bDhIaQCHtEvwJVFc4jem+D\nSSZrF7/n1jZvlOu9pP2VifDsJQKBgQC9nDdk1FrdhTTwBj9r7fEzSAcdq7RKeP1e\nvoeuYuPiLiSsupURzOQHf4LQMynoLclW4Jx03ksbbwApgL6ejqqeK/AIeSkFvpmu\nOUch7GgnHhXIsSSZEY/5gVixWyyBwNus+ZvrX/Ob2CTHtu0W96fvMUmJxxH5iZe5\nh05+Hq2fswKBgQCbso2qVoxGOvrd2xHf5MeKSpmMYprkn6+qva64CNcYuvt2Qm7F\nAWsBXIANLsel3QgUkGsP813XGOMu2/bzdvgSHYMb+lCDSLmLZk+QYy9OxRb+iDOc\n3ULhhUaGC1wdioxl6f8eKWPfyOrcKu/K4esFJr/D9DEMNB5F4/2BFMLdvQKBgEQc\nd7GarsFgdnG6bNHieYCIYTYBVhRiffGo06iLEX1QQhBiPeZVCZy/60fK+UTUHb09\nljZNHAHQz+gYvWDLsvJ6qhEBJQFRRHdXT/wZphhXMFAVgiYSLvvbwPaE3+oEU2VB\njQbyQto6vIuZZHWZpRPBSr9ZaVWQXZZhyop3jrsNAoGAW02FRa+MsbpkuEnKVK2L\ntHezWuBkh0mPa7WFpAlDCDlfjxsfcAyO8rlBdnjDplJaHWA4RD0z+ig9TUSVCgZE\n5e18cBP6yRXnxHKeU02x1fJfcFdjEmYbTEsC6Yb9YqZ3XvBTQ8pEKLNRuS+snFoT\n3dMvqpcZboV1Dl0343DKnkQ=\n-----END PRIVATE KEY-----\n",
+  "client_email": "smart-240@mindful-ship-176106.iam.gserviceaccount.com",
+  "client_id": "107519025364046200283",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/smart-240%40mindful-ship-176106.iam.gserviceaccount.com"
+}
