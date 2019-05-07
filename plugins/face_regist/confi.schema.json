@@ -1,0 +1,137 @@
+{
+    "schema": {
+        "faceDetection": {
+            "type": "object",
+            "title": "faceDetection Setting",
+            "properties": {
+                "emotion": {
+                    "type": "array",
+                    "title": "emotion",
+                    "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "anger":{
+                                          "type":"integer",
+                                          "title":"anger"
+                                        },
+                                        "contempt": {
+                                            "type": "integer",
+                                            "title": "contempt",
+                                        },
+                                        "disgust": {
+                                            "type": "integer",
+                                            "title": "disgust"
+                                        },
+                                        "fear": {
+                                            "type": "integer",
+                                            "title": "fear"
+                                        },
+                                        "happiness": {
+                                            "type": "integer",
+                                            "title": "happiness"
+                                        },
+                                        "neutral": {
+                                            "type": "integer",
+                                            "title": "neutral"
+                                        },
+                                        "sadness": {
+                                            "type": "integer",
+                                            "title": "sadness"
+                                        },
+                                        "surprise": {
+                                            "type": "integer",
+                                            "title": "surprise"
+                                        }
+                                    }
+                                }
+                },
+                "faceIds": {
+                    "type": "array",
+                    "title": "faceIds",
+                    "description": "faceIds",
+                    "default": "auto"
+                },
+                "personId": {
+                    "type": "array",
+                    "title": "personId",
+                    "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "personId":{
+                                          "type":"string",
+                                          "title":"personId"
+                                        },
+                                        "userName": {
+                                            "type": "string",
+                                            "title": "userName"
+                                        }
+                              }
+                     }
+                }
+            }
+        }
+    },
+    "form": [
+        {
+          "type":"fieldset",
+          "expandable":true,
+          "title":"Face Setting",
+          "order":0,
+          "items":[
+            "faceDetection.emtion",
+            {
+              "type": "fieldset",
+              "title": "Emotion",
+              "items": [
+                {
+                  "type":"tabarray",
+                  "items": [
+                    {
+                      "type":"section",
+                      "legend":"{{value}}",
+                      "items":[   
+                          {
+                            "key":"light.setup[].name",
+                            "valueInLegend":true
+                          },
+                          {
+                            "type":"tabarray",
+                            "title":"Targets",
+                            "items":[
+                              {
+                                    "type": "selectfieldset",
+                                    "key": "light.setup[].targets[].lightType",
+                                    "legend":"Item {{idx}}",
+                                    "titleMap":{
+                                        "hue":"Hue",
+                                        "hyperion":"Hyperion"
+                                    },
+                                    "items": [
+                                      {
+                                        "type": "section",
+                                        "items":[
+                                          "light.setup[].targets[].id"
+                                        ]
+                                      },
+                                      {
+                                        "type": "section",
+                                        "items":[
+                                          "light.setup[].targets[].ip",
+                                          "light.setup[].targets[].port"
+                                        ]
+                                      }
+                                  ]
+                                  
+                              }
+                            ]
+                          }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+}

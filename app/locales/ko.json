@@ -1,9 +1,9 @@
 {
     "home" : {
-        "commands" : "\"사용가능한 질문\" 이라고 말해보세요.."
+        "commands" : "\"질문\" 이라고 말해보세요.."
     },
     "traffic" : {
-        "time_to" : "Time to {{name}}: "
+        "time_to" : "교통정보 {{name}}: "
     },
     "reminders": {
         "empty": "리스트가 비었습니다."
@@ -44,12 +44,23 @@
         }
     },
     "commands": {
-        "title" : "사용가능한 질문",
+        "title" : "질문",
         "list": {
-            "text": "사용가능한 질문",
-            "voice": "사용가능한 질문",
+            "text": "질문",
+            "voice": "질문",
             "description": "음성인식으로 사용 가능한 질문을 보여줍니다."
         },
+        "face_detection": {
+            "text": "거울아",
+            "voice": "거울아",
+            "description": "사용자의 얼굴을 인식하여 로그인합니다."
+        },
+		"tts": {
+            "text": "tts테스트",
+            "voice": "tts테스트",
+            "description": "tts서비스테스트입니다."
+        },
+
         "list-next": {
             "text": "다음 페이지",
             "voice": "다음 페이지",
@@ -66,8 +77,8 @@
             "description": "지정한 페이지를 이동합니다(사용가능한 질문등 넘길 수 있는 페이지에서만 작동합니다.)"
         },
         "home": {
-            "text": "홈",
-            "voice": "홈",
+            "text": "홈으로",
+            "voice": "홈으로",
             "description": "홈 화면으로 돌아갑니다."
         },
         "sleep": {
@@ -86,18 +97,18 @@
             "description": "설정에서 지정한 도시를 보여줍니다."
         },
         "map_location": {
-            "text": "________ 보여줘",
-            "voice": "*location 보여줘",
+            "text": "________ 보여 줘",
+            "voice": "*location 보여 줘",
             "description": "음성인식한 지도를 보여줍니다."
         },
         "map_zoom_in": {
-            "text": "확대",
-            "voice": "확대",
+            "text": "지도 확대",
+            "voice": "지도 확대",
             "description": "지도를 확대합니다."
         },
         "map_zoom_out": {
-            "text": "축소",
-            "voice": "축소",
+            "text": "지도 축소",
+            "voice": "지도 축소",
             "description": "지도를 축소합니다."
         },
         "map_zoom_point": {
@@ -111,8 +122,8 @@
             "description": "줌을 해제합니다."
         },
         "video_search": {
-            "text": "________보여줘",
-            "voice": "*query보여줘",
+            "text": "________ 영상 틀어 줘",
+            "voice": "*query영상 틀어 줘",
             "description": "음성인식을 한걸 보여줍니다."
         },
         "video_stop": {
@@ -219,7 +230,77 @@
             "text": "________항목________에서 제거해줘",
             "voice": "*element항목*project에서 제거해줘",
             "description": "음성인식된 항목을 TODO리스트에서 제거합니다."
-        }
+        },
+	"face_regist" : {
+	    "text": "사용자 등록",
+            "voice": "사용자 등록",
+            "description": "사용자를 등록합니다."
+	},
+	"user_name": {
+            "text": "________(으)로 해 줘",
+            "voice": "*userName(으)로 해 줘",
+            "description": "사용자 등록시 이름을 등록합니다."
+        },
+	"checkName": {
+            "text": "________ 거울아",
+            "voice": "*ans 거울아",
+            "description": "사용자 등록시 이름을 등록합니다."
+        },
+	"hue_on":{
+	   "text": "거울아 ________ 불 켜",
+            "voice": "거울아 *room 불 켜",
+            "description": "사용자 등록시 이름을 등록합니다."
+	},
+	"hue_off":{
+	   "text": "거울아 불 꺼",
+            "voice": "거울아 불 꺼",
+            "description": "사용자 등록시 이름을 등록합니다."
+	},
+	"hue_red":{
+	   "text": "거울아 불 빨간색으로",
+            "voice": "거울아 불 빨간색으로",
+            "description": "사용자 등록시 이름을 등록합니다."
+	},
+	"hue_green":{
+	   "text": "거울아 불 초록색으로",
+            "voice": "거울아 불 초록색으로",
+            "description": "사용자 등록시 이름을 등록합니다."
+	},
+	"hue_yellow":{
+	   "text": "거울아 불 노란색으로",
+            "voice": "거울아 불 노란색으로",
+            "description": "사용자 등록시 이름을 등록합니다."
+	},
+	"hue_pink":{
+	   "text": "거울아 불 분홍색으로",
+            "voice": "거울아 불 분홍색으로",
+            "description": "사용자 등록시 이름을 등록합니다."
+	},
+	"hue_white":{
+	   "text": "거울아 불 흰색으로",
+            "voice": "거울아 불 흰색으로",
+            "description": "사용자 등록시 이름을 등록합니다."
+	},
+	"hue_colorloop":{
+	   "text": "오로라 색깔",
+            "voice": "오로라 색깔",
+            "description": "사용자 등록시 이름을 등록합니다."
+	},
+	"hue_colorloop_end":{
+	   "text": "오로라 색깔 멈춰",
+            "voice": "오로라 색깔 멈춰",
+            "description": "사용자 등록시 이름을 등록합니다."
+	},
+	"hue_bright":{
+	   "text": "불 밝게",
+            "voice": "불 밝게",
+            "description": "사용자 등록시 이름을 등록합니다."
+	},
+	"hue_dark":{
+	   "text": "불 어둡게",
+            "voice": "불 어둡게",
+            "description": "사용자 등록시 이름을 등록합니다."
+	}
     },
     "fitbit": {
         "user": "사용자: ",

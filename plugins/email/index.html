@@ -1,0 +1,7 @@
+<ul ng-controller="Email" class="email fade" ng-show="focus == 'default'" ng-class="config.calendar.showCalendarNames ? 'show-calendar-names' : ''">
+    <li class="event" ng-repeat="event in email" ng-class="(calendar[$index - 1].label != event.label) ? 'day-marker' : ''">
+        <div class="event-details">
+           <p>{{event}}
+        </div>
+    </li>
+</ul>

@@ -4,6 +4,63 @@
 <head ng-controller="Theme">
   <meta charset="utf-8">
   <title>Smart Mirror</title>
+ <style>
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+
+* {
+  font-family: Lato;
+}
+
+.content h1 {
+  font-weight: 300;
+  text-align: center;
+}
+
+svg {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+
+   text.middle {
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 24px;
+  }
+  
+  .nvd3.nv-pie .nv-pieLabels text {
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 300;
+    fill: #fff !important;
+  }
+}
+
+.picture-container {
+  position: relative;
+  width: 600px;
+  height: 338px;
+  margin: 20px auto;
+  border: 10px solid #fff;
+  background: #000;
+  box-shadow: 0 5px 5px #000;
+}
+
+  .picture {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+.face {
+  position: absolute;
+  border: 2px solid #FFF;
+}
+ </style>
+	
+
+
+
+
   <script>
     const annyang = require('annyang')
     const fs = require('fs')
@@ -19,7 +76,7 @@
         + errorMsg + '| Script: ' + url + ' Line: ' + lineNumber + '\n');
     }
   </script>
-
+	
   <!-- Styles and Resources -->
   <link rel="shortcut icon" href="favicon.ico" />
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800,700' rel='stylesheet' type='text/css'>
@@ -35,6 +92,7 @@
     <div class="top-left">
       <div ng-include="'plugins/datetime/index.html'"></div>
       <div ng-include="'plugins/calendar/index.html'"></div>
+	  <div ng-include="'plugins/email/index.html'" id = "emailDiv"></div>	
     </div>
     <div class="top-right">
       <div ng-include="'plugins/weather/index.html'"></div>
@@ -52,11 +110,15 @@
       <div ng-include="'plugins/map/index.html'"></div>
       <div ng-include="'plugins/xkcd/index.html'"></div>
       <div ng-include="'plugins/dilbert/index.html'"></div>
+		<div ng-include="'plugins/Hue/index.html'"></div>
       <div ng-include="'plugins/search/index.html'"></div>
       <div ng-include="'plugins/giphy/index.html'"></div>
       <div ng-include="'plugins/reminder/index.html'"></div>
       <div ng-include="'plugins/timer/index.html'"></div>
       <div ng-include="'plugins/todoist/index.html'"></div>
+	  <div ng-include="'plugins/face_detection/index.html'"></div>
+	  <div ng-include="'plugins/face_regist/index.html'"></div>
+	  <div ng-include="'plugins/TrafficMap/index.html'"></div>
     </div>
     <div class="bottom-center">
       <!-- Command list -->
@@ -68,9 +130,11 @@
     </div>
     <div class="bottom-left">
       <div ng-include="'plugins/fitbit/index.html'" ng-if="config.fitbit.creds"></div>
+	  <div ng-include= "'plugins/email/index.html'" ng-if="config.email.user"></div>
       <div ng-include="'plugins/scrobbler/index.html'"></div>
     </div>
     <div class="bottom-right">
+	<div ng-include="'plugins/face_detection/emotion_index.html'"></div>
       <!-- Someday something will live here -->
     </div>
     <div ng-controller="Maker"></div>
@@ -135,9 +199,19 @@
   <script src="plugins/calendar/controller.js"></script>
   <script src="plugins/remote/controller.js"></script>
   <script src="plugins/maker/controller.js"></script>
+  <script src="plugins/Hue/controller.js"></script>
   <script src="plugins/todoist/controller.js"></script>
   <script src="plugins/ha-display/controller.js"></script>
-
+  <script src="plugins/face_detection/controller.js"></script>
+  <script src="plugins/face_regist/controller.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script src="plugins/TrafficMap/controller.js"></script>
+  <!-- responsivevoice.js -->
+	<script src="http://code.responsivevoice.org/responsivevoice.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.7.0/nv.d3.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://jaysalvat.github.io/jquery.facedetection/releases/latest/jquery.facedetection.min.js"></script>
 </body>
 
 </html>
